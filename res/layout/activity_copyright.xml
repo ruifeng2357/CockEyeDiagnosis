@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/rlCopywriteBack"
+      android:background="@drawable/mainback">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:background="@drawable/titleback"
+            android:id="@+id/relativeLayout">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/mianzetiaokuan"
+                android:id="@+id/lblCopywriteTitle"
+                android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/relativeLayout"
+            android:layout_margin="20px"
+            android:background="@drawable/registerback">
+
+        <view android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.damytech.utils.NoZoomControllWebView" android:id="@+id/viewCopywrite_Data"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_above="@+id/btnCopywrite_OK" android:layout_marginBottom="130px"
+            android:background="@android:color/transparent"/>
+        <Button
+                android:layout_width="523px"
+                android:layout_height="90px"
+                android:text="@string/xiayibu"
+                android:id="@+id/btnCopywrite_OK"
+                android:layout_marginBottom="30px" android:textColor="@color/white"
+                android:textSize="@dimen/ButtonFontSize" android:background="@drawable/greenrect"
+                android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:id="@+id/imgTongyi"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="80px"
+                android:layout_above="@+id/btnCopywrite_OK" android:layout_marginBottom="40px"
+                android:scaleType="fitCenter" android:src="@drawable/checked"/>
+        <TextView
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:text="@string/tongyi"
+                android:id="@+id/lblTongyi" android:layout_alignTop="@+id/imgTongyi"
+                android:layout_toRightOf="@+id/imgTongyi"
+                android:layout_alignBottom="@+id/imgTongyi" android:layout_marginLeft="10px"
+                android:gravity="center_vertical|left" android:textColor="@color/gray_dark" android:textSize="30px"/>
+        <TextView
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:text="@string/butongyi"
+                android:id="@+id/lblButongyi" android:layout_alignTop="@+id/lblTongyi"
+                android:layout_alignParentRight="true" android:layout_marginRight="80px"
+                android:layout_alignBottom="@+id/lblTongyi" android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="30px"/>
+        <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:id="@+id/imgButongyi" android:layout_alignTop="@+id/lblButongyi"
+                android:layout_toLeftOf="@+id/lblButongyi" android:layout_marginRight="10px"
+                android:scaleType="fitCenter" android:src="@drawable/unchecked"/>
+    </RelativeLayout>
+</RelativeLayout>
+

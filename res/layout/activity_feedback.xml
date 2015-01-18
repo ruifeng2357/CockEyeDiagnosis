@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/rlFeedbackBack"
+      android:background="@drawable/mainback">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:background="@drawable/titleback"
+            android:id="@+id/relativeLayout">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/shangchuanzhenduanxinxi"
+                android:id="@+id/lblFeedbackTitle"
+                android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"/>
+        <Button
+                android:layout_width="107px"
+                android:layout_height="62px"
+                android:text="@string/shangchuan"
+                android:id="@+id/btnFeedback_Upload" android:layout_centerVertical="true" android:layout_alignParentRight="true"
+                android:layout_marginRight="20px" android:textSize="@dimen/EditTextFontSize"
+                android:textColor="@color/white" android:background="@drawable/rectgreen"/>
+    </RelativeLayout>
+    <com.damytech.utils.PullRefreshListView.PullToRefreshListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listFeedback_Datas" android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true" android:layout_marginTop="25px"/>
+</RelativeLayout>
+

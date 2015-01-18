@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-->Common values<-->
+	<dimen name="TitleFontSize">50px</dimen>
+    <dimen name="HintFontSize">30px</dimen>
+    <dimen name="EditTextLeftPadding">20px</dimen>
+    <dimen name="EditTextFontSize">30px</dimen>
+    <dimen name="ButtonFontSize">36px</dimen>
+
+	<!-->PullRefreshView values<-->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+</resources>

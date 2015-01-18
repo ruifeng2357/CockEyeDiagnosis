@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/rlDefLoginBack"
+      android:background="@drawable/defloginback">
+    <Button
+            android:layout_width="540px"
+            android:layout_height="110px"
+            android:id="@+id/btnDefLogin" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+            android:layout_marginLeft="90px" android:layout_marginBottom="110px"
+            android:background="@android:color/transparent" android:text="@string/tiaoguodenglu"
+            android:textColor="@color/gray_dark" android:textSize="@dimen/ButtonFontSize"/>
+</RelativeLayout>
+

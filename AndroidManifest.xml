@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.damytech.patient"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="11"/>
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera"></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash"/>
+
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:name="LogoActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".RegisterActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".UploadActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".FeedbackActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".HorPhotoActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".VerPhotoActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".CompareActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".HelpActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".FeedbackDetailActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".DetailPhotoActivity"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".CopywriteActivity"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".DefLoginActivity"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+
+    </application>
+
+</manifest>

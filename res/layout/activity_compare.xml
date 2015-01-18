@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/rlCompareBack"
+      android:background="@drawable/mainback">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:background="@drawable/titleback"
+            android:id="@+id/relativeLayout">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/zhaopiancaiji"
+                android:id="@+id/lblCompareTitle"
+                android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" android:layout_margin="20px"
+            android:background="@drawable/registerback">
+
+        <ImageView
+                android:layout_width="527px"
+                android:layout_height="527px"
+                android:id="@+id/imgCompare_Photo" android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" android:layout_marginTop="180px" android:scaleType="fitCenter"
+                android:src="@drawable/defaultimgback"/>
+        <Button
+                android:layout_width="236px"
+                android:layout_height="90px"
+                android:text="@string/queding"
+                android:id="@+id/btnCompare_OK" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+                android:layout_marginLeft="80px" android:layout_marginBottom="80px" android:textColor="@color/white"
+                android:textSize="@dimen/ButtonFontSize" android:background="@drawable/greenrect"/>
+        <Button
+                android:layout_width="236px"
+                android:layout_height="90px"
+                android:text="@string/chongpai"
+                android:id="@+id/btnCompare_ReShut" android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" android:layout_marginBottom="80px"
+                android:layout_marginRight="80px" android:background="@drawable/whiterect"
+                android:textColor="@color/greenmain" android:textSize="@dimen/ButtonFontSize"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/dianjitupianfangdachakan"
+                android:id="@+id/lblHint" android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp" android:layout_alignRight="@+id/btnCompare_ReShut"
+                android:gravity="center" android:layout_alignLeft="@+id/btnCompare_OK" android:textColor="@color/black"
+                android:textSize="@dimen/EditTextFontSize"/>
+    </RelativeLayout>
+</RelativeLayout>
+

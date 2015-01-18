@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/rlHelpBack"
+      android:background="@drawable/mainback">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:background="@drawable/titleback"
+            android:id="@+id/relativeLayout">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/shiyongshuoming"
+                android:id="@+id/lblHelpTitle"
+                android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/relativeLayout"
+            android:layout_margin="20px"
+            android:background="@drawable/registerback">
+
+        <Button
+                android:layout_width="523px"
+                android:layout_height="90px"
+                android:text="@string/fanhui"
+                android:id="@+id/btnHelp_OK"
+                android:layout_marginBottom="30px" android:textColor="@color/white"
+                android:textSize="@dimen/ButtonFontSize" android:background="@drawable/greenrect"
+                android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <view android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              class="com.damytech.utils.NoZoomControllWebView" android:id="@+id/viewHelp_Data"
+              android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+              android:layout_above="@+id/btnHelp_OK" android:layout_marginBottom="30px"
+              android:background="@android:color/transparent"/>
+    </RelativeLayout>
+</RelativeLayout>
+

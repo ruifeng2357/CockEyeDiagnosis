@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" android:id="@+id/rlPhotoBack">
+
+
+    <SurfaceView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/surfacePhoto_Video" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"/>
+    <Button
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:id="@+id/btnPhoto_Video"
+            android:background="@drawable/video" android:visibility="gone"/>
+    <ImageView
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:id="@+id/imgLeftEye"
+            android:layout_marginLeft="170px" android:scaleType="fitCenter" android:src="@drawable/photoframe"
+            android:layout_centerVertical="true" android:visibility="invisible"/>
+    <ImageView
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:id="@+id/imgRightEye" android:layout_centerVertical="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="170px" android:scaleType="fitCenter" android:src="@drawable/photoframe"
+            android:visibility="invisible"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150px" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:background="@color/black">
+    </RelativeLayout>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60px"
+            android:text="@string/photohint1"
+            android:id="@+id/lblHint" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:gravity="center" android:textColor="@color/white" android:layout_marginTop="20px"
+            android:textSize="@dimen/EditTextFontSize"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60px"
+            android:text="@string/photohint2"
+            android:id="@+id/lblHint2" android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lblHint" android:gravity="center" android:textColor="@color/white"
+            android:textSize="@dimen/EditTextFontSize"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150px" android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" android:background="@color/black">
+    </RelativeLayout>
+    <ImageView
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:id="@+id/imgPhto_Shutter"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shutter" android:layout_marginBottom="10px" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:visibility="visible"/>
+    <Button
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:id="@+id/btnShutter"
+            android:layout_marginBottom="10px" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:background="@drawable/btnshutter" android:visibility="gone"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1px" android:layout_centerVertical="true" android:background="#80FF0000">
+    </RelativeLayout>
+
+</RelativeLayout>

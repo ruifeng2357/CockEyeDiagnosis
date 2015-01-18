@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/rlUploadBack"
+      android:background="@drawable/mainback">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:background="@drawable/titleback"
+            android:id="@+id/relativeLayout">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/shangchuanzhenduanxinxi"
+                android:id="@+id/lblUploadTitle"
+                android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"/>
+        <Button
+                android:layout_width="107px"
+                android:layout_height="62px"
+                android:text="@string/bangzhu"
+                android:id="@+id/btnUpload_Help" android:layout_centerVertical="true" android:layout_alignParentRight="true"
+                android:layout_marginRight="20px" android:textSize="@dimen/EditTextFontSize"
+                android:textColor="@color/white" android:background="@drawable/rectgreen"/>
+        <Button
+                android:layout_width="107px"
+                android:layout_height="62px"
+                android:text="@string/fankui"
+                android:id="@+id/btnUpload_Feedback" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:textColor="@color/white" android:textSize="@dimen/EditTextFontSize"
+                android:background="@drawable/rectgreen" android:layout_marginLeft="20px"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" android:layout_margin="20px"
+            android:background="@drawable/registerback">
+
+        <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/scrollView">
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1220px">
+                <Button
+                        android:layout_width="523px"
+                        android:layout_height="90px"
+                        android:text="@string/shangchuan"
+                        android:id="@+id/btnUpload_OK"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/ButtonFontSize" android:background="@drawable/greenrect"
+                        android:layout_marginTop="30px"
+                        android:layout_below="@+id/lblUpload_Gender"
+                        android:layout_alignParentBottom="false"
+                        />
+                <TextView
+                        android:layout_width="180px"
+                        android:layout_height="60px"
+                        android:text="@string/riqi"
+                        android:id="@+id/lblUpload_Date" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="55px" android:layout_marginTop="30px" android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtUpload_Date" android:layout_alignTop="@+id/lblUpload_Date"
+                        android:layout_toRightOf="@+id/lblUpload_Date" android:layout_alignBottom="@+id/lblUpload_Date"
+                        android:layout_marginLeft="10px" android:layout_marginRight="55px"
+                        android:layout_alignParentRight="true" android:background="@android:color/transparent"
+                        android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"
+                        android:enabled="false" android:editable="false"/>
+                <RelativeLayout
+                        android:layout_width="527px"
+                        android:layout_height="278px"
+                        android:layout_below="@+id/txtUpload_Date" android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true" android:id="@+id/rlPhoto1">
+                    <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/imgUpload_Photo1"
+                            android:layout_centerHorizontal="true" android:scaleType="fitCenter"
+                            android:src="@drawable/defaultimgback"/>
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="60px"
+                            android:text="@string/flashhint1"
+                            android:id="@+id/lblPhotoHint1" android:gravity="center"
+                            android:layout_centerVertical="true" android:textColor="@color/black"
+                            android:textSize="@dimen/EditTextFontSize"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="527px"
+                        android:layout_height="278px" android:id="@+id/rlPhoto2"
+                        android:layout_below="@+id/rlPhoto1" android:layout_marginTop="30px"
+                        android:layout_centerHorizontal="true">
+                    <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/imgUpload_Photo2"
+                            android:layout_centerHorizontal="true" android:scaleType="fitCenter"
+                            android:src="@drawable/defaultimgback"/>
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="60px"
+                            android:text="@string/flashhint2"
+                            android:id="@+id/lblPhotoHint2" android:gravity="center" android:textColor="@color/black"
+                            android:textSize="@dimen/EditTextFontSize" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60px"
+                        android:text="@string/uploadhint"
+                        android:id="@+id/lblUpload_Hint" android:layout_alignLeft="@+id/lblUpload_Date"
+                        android:layout_marginTop="50px"
+                        android:gravity="center_vertical|left" android:layout_alignRight="@+id/txtUpload_Date"
+                        android:textSize="@dimen/EditTextFontSize" android:textColor="@color/gray_dark"
+                        android:layout_below="@+id/rlPhoto2"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60px"
+                        android:text="@string/xingming"
+                        android:id="@+id/lblUpload_Name" android:layout_alignLeft="@+id/lblUpload_Date"
+                        android:layout_marginTop="30px" android:gravity="center_vertical|left"
+                        android:layout_alignRight="@+id/lblUpload_Date" android:layout_below="@+id/lblUpload_Hint"
+                        android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtUpload_Name" android:layout_alignTop="@+id/lblUpload_Name"
+                        android:layout_toRightOf="@+id/lblUpload_Name" android:layout_alignRight="@+id/lblUpload_Hint"
+                        android:layout_alignBottom="@+id/lblUpload_Name" android:layout_marginLeft="10px"
+                        android:background="@android:color/transparent" android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/EditTextFontSize" android:hint="@string/insertname"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView" android:layout_alignParentBottom="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignLeft="@+id/txtUpload_Name" android:layout_alignRight="@+id/txtUpload_Name"
+                        android:layout_below="@+id/txtUpload_Name" android:layout_marginTop="3px"
+                        android:background="@drawable/blackline"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60px"
+                        android:text="@string/shoujihaoma"
+                        android:id="@+id/lblUpload_Phone" android:layout_alignLeft="@+id/lblUpload_Name"
+                        android:layout_marginTop="30px" android:gravity="center_vertical|left"
+                        android:layout_alignRight="@+id/lblUpload_Name" android:layout_below="@+id/lblUpload_Name"
+                        android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtUpload_Phone" android:layout_alignTop="@+id/lblUpload_Phone"
+                        android:layout_toRightOf="@+id/lblUpload_Phone" android:layout_alignRight="@+id/txtUpload_Name"
+                        android:layout_alignBottom="@+id/lblUpload_Phone" android:layout_marginLeft="10px"
+                        android:background="@android:color/transparent" android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/EditTextFontSize" android:inputType="phone"
+                        android:hint="@string/qingshurushoujihaoma"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView0" android:layout_alignParentBottom="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignLeft="@+id/txtUpload_Name" android:layout_alignRight="@+id/txtUpload_Name"
+                        android:layout_below="@+id/txtUpload_Phone" android:layout_marginTop="3px"
+                        android:background="@drawable/blackline"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60px"
+                        android:text="@string/chushengriqi"
+                        android:id="@+id/lblUpload_Birth" android:layout_alignLeft="@+id/lblUpload_Name"
+                        android:layout_alignRight="@+id/lblUpload_Name" android:layout_below="@+id/imageView0"
+                        android:layout_marginTop="30px" android:gravity="center_vertical|left"
+                        android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblUpload_Birthday" android:gravity="center_vertical|left"
+                        android:layout_alignLeft="@+id/txtUpload_Name" android:layout_alignRight="@+id/txtUpload_Name"
+                        android:layout_alignTop="@+id/lblUpload_Birth"
+                        android:layout_alignBottom="@+id/lblUpload_Birth" android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/EditTextFontSize"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="3px"
+                        android:id="@+id/imageView2" android:layout_alignLeft="@+id/lblUpload_Birthday"
+                        android:layout_alignRight="@+id/lblUpload_Birthday"
+                        android:layout_below="@+id/lblUpload_Birthday" android:layout_marginTop="3px"
+                        android:background="@drawable/blackline"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60px"
+                        android:text="@string/xingbie"
+                        android:id="@+id/lblUpload_Gender" android:layout_alignLeft="@+id/lblUpload_Birth"
+                        android:layout_alignRight="@+id/lblUpload_Birth" android:layout_below="@+id/imageView2"
+                        android:layout_marginTop="30px" android:gravity="center_vertical|left"
+                        android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+                <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:id="@+id/imgUpload_Male" android:layout_alignTop="@+id/lblUpload_Gender"
+                        android:layout_toRightOf="@+id/lblUpload_Gender" android:layout_marginTop="10px"
+                        android:layout_marginLeft="40px" android:scaleType="fitCenter" android:src="@drawable/checked"/>
+                <TextView
+                        android:layout_width="70px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nan"
+                        android:id="@+id/lblUpload_Male" android:layout_alignTop="@+id/lblUpload_Gender"
+                        android:layout_toRightOf="@+id/imgUpload_Male" android:layout_marginLeft="15px"
+                        android:layout_alignBottom="@+id/lblUpload_Gender" android:gravity="center_vertical|left"
+                        android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+                <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:id="@+id/imgUpload_Female" android:layout_alignTop="@+id/lblUpload_Male"
+                        android:layout_toRightOf="@+id/lblUpload_Male" android:layout_marginLeft="60px"
+                        android:layout_marginTop="10px" android:scaleType="fitCenter" android:src="@drawable/unchecked"/>
+                <TextView
+                        android:layout_width="70px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nv"
+                        android:id="@+id/lblUpload_Female" android:layout_alignTop="@+id/lblUpload_Male"
+                        android:layout_toRightOf="@+id/imgUpload_Female" android:layout_alignBottom="@+id/lblUpload_Male"
+                        android:layout_marginLeft="15px" android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"/>
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30px" android:layout_below="@+id/btnUpload_OK">
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
+

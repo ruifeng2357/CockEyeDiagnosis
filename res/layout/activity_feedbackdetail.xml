@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/rlFeedbackDetailBack"
+      android:background="@drawable/mainback">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:background="@drawable/titleback"
+            android:id="@+id/relativeLayout">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/fankuixinxi"
+                android:id="@+id/lblFeedbackDetailTitle"
+                android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"/>
+        <ImageView
+                android:layout_width="27px"
+                android:layout_height="47px"
+                android:id="@+id/imgFeedbackDetail_Back" android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="30px" android:scaleType="fitCenter"
+                android:src="@drawable/leftarrow"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+        <com.damytech.utils.SmartImageView.SmartImageView
+                android:layout_width="527px"
+                android:layout_height="284px"
+                android:id="@+id/imgFeedbackDeatil_Photo1"
+                android:layout_centerHorizontal="true" android:layout_marginTop="30px" android:scaleType="fitCenter"
+                />
+        <com.damytech.utils.SmartImageView.SmartImageView
+                android:layout_width="527px"
+                android:layout_height="284px"
+                android:id="@+id/imgFeedbackDeatil_Photo2" android:layout_below="@+id/imgFeedbackDeatil_Photo1"
+                android:layout_centerHorizontal="true" android:layout_marginTop="30px" android:scaleType="fitCenter"
+                />
+        <TextView
+                android:layout_width="220px"
+                android:layout_height="60px"
+                android:text="@string/zhenduanyishengxingming"
+                android:id="@+id/lblFeedbackDeatil_Name"
+                android:layout_marginTop="30px" android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"
+                android:layout_below="@+id/imgFeedbackDeatil_Photo2" android:layout_marginLeft="40px"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblFeedbackDetail_NameValue" android:layout_alignTop="@+id/lblFeedbackDeatil_Name"
+                android:layout_toRightOf="@+id/lblFeedbackDeatil_Name"
+                android:layout_alignBottom="@+id/lblFeedbackDeatil_Name" android:layout_alignParentRight="true"
+                android:layout_marginRight="40px" android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"
+                android:singleLine="true" android:ellipsize="end"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="3px"
+                android:id="@+id/imageView"
+                android:layout_toRightOf="@+id/lblFeedbackDeatil_Name"
+                android:layout_below="@+id/lblFeedbackDetail_NameValue"
+                android:layout_alignRight="@+id/lblFeedbackDetail_NameValue" android:layout_marginTop="3px"
+                android:background="@drawable/blackline"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/zhenduanriqi"
+                android:id="@+id/lblFeedbackDetail_Date" android:layout_below="@+id/imageView"
+                android:layout_alignLeft="@+id/lblFeedbackDeatil_Name" android:layout_marginTop="30px"
+                android:layout_alignRight="@+id/lblFeedbackDeatil_Name" android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblFeedbackDetail_DateValue" android:layout_alignTop="@+id/lblFeedbackDetail_Date"
+                android:layout_toRightOf="@+id/lblFeedbackDetail_Date" android:layout_alignRight="@+id/imageView"
+                android:layout_alignBottom="@+id/lblFeedbackDetail_Date" android:textColor="@color/gray_dark"
+                android:textSize="@dimen/EditTextFontSize" android:singleLine="true" android:gravity="center_vertical|left"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="3px"
+                android:id="@+id/imageView2" android:layout_below="@+id/lblFeedbackDetail_DateValue"
+                android:layout_alignLeft="@+id/lblFeedbackDetail_DateValue"
+                android:layout_alignRight="@+id/lblFeedbackDetail_DateValue" android:layout_marginTop="3px"
+                android:background="@drawable/blackline"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/zhenduanjieguo"
+                android:id="@+id/lblFeedbackDetail_Res" android:layout_below="@+id/imageView2"
+                android:layout_alignLeft="@+id/lblFeedbackDetail_Date" android:layout_marginTop="30px"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/txtFeedbackDetail_ResValue"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize" android:gravity="left|top"
+                android:background="@color/transparent"
+                android:enabled="false" android:layout_alignTop="@+id/lblFeedbackDetail_Res"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30px" android:layout_alignRight="@+id/imageView2"
+                android:layout_alignLeft="@+id/imageView2"/>
+    </RelativeLayout>
+</RelativeLayout>
+

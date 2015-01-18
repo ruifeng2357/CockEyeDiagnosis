@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/rlRegisterBack"
+      android:background="@drawable/mainback">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:background="@drawable/titleback"
+            android:id="@+id/relativeLayout">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/yonghuzhuce"
+                android:id="@+id/lblRegisterTitle"
+                android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" android:layout_margin="20px"
+            android:background="@drawable/registerback">
+        <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/star" android:layout_alignTop="@+id/lblRegister_Name"
+                android:layout_marginTop="20px" android:id="@+id/imgRegister_Name"
+                android:layout_marginLeft="20px"
+                android:layout_alignParentLeft="true"/>
+        <TextView
+                android:layout_width="170px"
+                android:layout_height="60px"
+                android:text="@string/yonghuxingming"
+                android:id="@+id/lblRegister_Name"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="60px"
+                android:layout_alignParentTop="true" android:textColor="@color/gray_dark"
+                android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtRegister_Name" android:layout_alignTop="@+id/lblRegister_Name"
+                android:layout_toRightOf="@+id/lblRegister_Name" android:layout_alignParentRight="true"
+                android:layout_marginRight="20px" android:layout_marginLeft="20px"
+                android:layout_alignBottom="@+id/lblRegister_Name" android:textColor="@color/gray_dark"
+                android:textSize="@dimen/EditTextFontSize" android:background="@android:color/transparent"
+                android:hint="@string/insertname"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="3px"
+                android:id="@+id/imageView" android:layout_below="@+id/txtRegister_Name"
+                android:layout_alignLeft="@+id/txtRegister_Name" android:layout_alignRight="@+id/txtRegister_Name"
+                android:layout_marginTop="3px" android:background="@drawable/blackline"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/xingbie"
+                android:id="@+id/lblRegister_Gender" android:layout_below="@+id/imageView"
+                android:layout_alignLeft="@+id/lblRegister_Name" android:layout_marginTop="40px"
+                android:layout_alignRight="@+id/lblRegister_Name" android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+        <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:id="@+id/imgRegister_Gender" android:layout_alignTop="@+id/lblRegister_Gender"
+                android:layout_alignLeft="@+id/imgRegister_Name" android:layout_marginTop="20px"
+                android:scaleType="fitCenter" android:src="@drawable/star"/>
+        <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:id="@+id/imgRegister_Male" android:layout_alignTop="@+id/lblRegister_Gender"
+                android:layout_toRightOf="@+id/lblRegister_Gender" android:layout_marginTop="10px"
+                android:layout_marginLeft="40px" android:scaleType="fitCenter" android:src="@drawable/checked"/>
+        <TextView
+                android:layout_width="70px"
+                android:layout_height="wrap_content"
+                android:text="@string/nan"
+                android:id="@+id/lblRegister_Male" android:layout_alignTop="@+id/lblRegister_Gender"
+                android:layout_toRightOf="@+id/imgRegister_Male" android:layout_marginLeft="15px"
+                android:layout_alignBottom="@+id/lblRegister_Gender" android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+        <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:id="@+id/imgRegister_Female" android:layout_alignTop="@+id/lblRegister_Male"
+                android:layout_toRightOf="@+id/lblRegister_Male" android:layout_marginLeft="60px"
+                android:layout_marginTop="10px" android:scaleType="fitCenter" android:src="@drawable/unchecked"/>
+        <TextView
+                android:layout_width="70px"
+                android:layout_height="wrap_content"
+                android:text="@string/nv"
+                android:id="@+id/lblRegister_Female" android:layout_alignTop="@+id/lblRegister_Male"
+                android:layout_toRightOf="@+id/imgRegister_Female" android:layout_alignBottom="@+id/lblRegister_Male"
+                android:layout_marginLeft="15px" android:textColor="@color/gray_dark"
+                android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/chushengriqi"
+                android:id="@+id/lblRegister_Birth" android:layout_below="@+id/lblRegister_Gender"
+                android:layout_alignLeft="@+id/lblRegister_Gender" android:layout_marginTop="40px"
+                android:layout_alignRight="@+id/lblRegister_Gender" android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+        <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:id="@+id/imgRegister_Birh" android:layout_alignTop="@+id/lblRegister_Birth"
+                android:layout_alignLeft="@+id/imgRegister_Gender" android:layout_marginTop="20px"
+                android:scaleType="fitCenter" android:src="@drawable/star"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtRegister_Birth" android:layout_alignTop="@+id/lblRegister_Birth"
+                android:layout_alignLeft="@+id/imageView" android:layout_alignRight="@+id/imageView"
+                android:layout_alignBottom="@+id/lblRegister_Birth" android:background="@android:color/transparent"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"
+                android:editable="false"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="3px"
+                android:id="@+id/imageView2"
+                android:layout_alignLeft="@+id/txtRegister_Birth" android:layout_below="@+id/txtRegister_Birth"
+                android:layout_alignRight="@+id/txtRegister_Birth"
+                android:background="@drawable/blackline"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/jiatingzhuzhi"
+                android:id="@+id/lblRegister_Addr" android:layout_below="@+id/imageView2"
+                android:layout_alignLeft="@+id/lblRegister_Birth" android:layout_marginTop="40px"
+                android:layout_alignRight="@+id/lblRegister_Birth" android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtRegister_Addr" android:layout_alignTop="@+id/lblRegister_Addr"
+                android:layout_alignLeft="@+id/imageView2" android:layout_alignRight="@+id/imageView2"
+                android:layout_alignBottom="@+id/lblRegister_Addr" android:background="@android:color/transparent"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="3px"
+                android:id="@+id/imageView3"
+                android:layout_alignLeft="@+id/txtRegister_Addr" android:layout_below="@+id/txtRegister_Addr"
+                android:layout_alignRight="@+id/txtRegister_Addr"
+                android:background="@drawable/blackline"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/shoujihaoma"
+                android:id="@+id/lblRegister_Phone" android:layout_below="@+id/imageView3"
+                android:layout_alignLeft="@+id/lblRegister_Addr" android:layout_marginTop="40px"
+                android:layout_alignRight="@+id/lblRegister_Addr" android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+        <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:id="@+id/imgRegister_Phone" android:layout_alignTop="@+id/lblRegister_Phone"
+                android:layout_alignLeft="@+id/imgRegister_Birh" android:layout_marginTop="20px"
+                android:scaleType="fitCenter" android:src="@drawable/star"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtRegister_Phone" android:layout_alignTop="@+id/lblRegister_Phone"
+                android:layout_alignLeft="@+id/imageView3" android:layout_alignRight="@+id/imageView3"
+                android:layout_alignBottom="@+id/lblRegister_Phone" android:background="@android:color/transparent"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"
+                android:inputType="phone" android:hint="@string/insertphonenum"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="3px"
+                android:id="@+id/imageView4"
+                android:layout_alignLeft="@+id/txtRegister_Phone" android:layout_below="@+id/txtRegister_Phone"
+                android:layout_alignRight="@+id/txtRegister_Phone"
+                android:background="@drawable/blackline"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/mima"
+                android:id="@+id/lblRegister_Password" android:layout_below="@+id/imageView4"
+                android:layout_alignLeft="@+id/lblRegister_Phone" android:layout_marginTop="40px"
+                android:layout_alignRight="@+id/lblRegister_Phone" android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+        <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:id="@+id/imgRegister_Password" android:layout_alignTop="@+id/lblRegister_Password"
+                android:layout_alignLeft="@+id/imgRegister_Phone" android:layout_marginTop="20px"
+                android:scaleType="fitCenter" android:src="@drawable/star"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtRegister_Password" android:layout_alignTop="@+id/lblRegister_Password"
+                android:layout_alignLeft="@+id/imageView4" android:layout_alignRight="@+id/imageView4"
+                android:layout_alignBottom="@+id/lblRegister_Password" android:background="@android:color/transparent"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"
+                android:password="true" android:hint="@string/passlength_error"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="3px"
+                android:id="@+id/imageView5"
+                android:layout_alignLeft="@+id/txtRegister_Password" android:layout_below="@+id/txtRegister_Password"
+                android:layout_alignRight="@+id/txtRegister_Password"
+                android:background="@drawable/blackline"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/querenmima"
+                android:id="@+id/lblRegister_RePassword" android:layout_below="@+id/imageView5"
+                android:layout_alignLeft="@+id/lblRegister_Password" android:layout_marginTop="40px"
+                android:layout_alignRight="@+id/lblRegister_Password" android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+        <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:id="@+id/imgRegister_RePassword" android:layout_alignTop="@+id/lblRegister_RePassword"
+                android:layout_alignLeft="@+id/imgRegister_Password" android:layout_marginTop="20px"
+                android:scaleType="fitCenter" android:src="@drawable/star"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtRegister_RePassword" android:layout_alignTop="@+id/lblRegister_RePassword"
+                android:layout_alignLeft="@+id/imageView5" android:layout_alignRight="@+id/imageView5"
+                android:layout_alignBottom="@+id/lblRegister_RePassword" android:background="@android:color/transparent"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"
+                android:password="true" android:hint="@string/passlength_error"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="3px"
+                android:id="@+id/imageView6"
+                android:layout_alignLeft="@+id/txtRegister_RePassword" android:layout_below="@+id/txtRegister_RePassword"
+                android:layout_alignRight="@+id/txtRegister_RePassword"
+                android:background="@drawable/blackline"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/bingshi"
+                android:id="@+id/lblRegister_Ill" android:layout_below="@+id/imageView6"
+                android:layout_alignLeft="@+id/lblRegister_RePassword" android:layout_marginTop="40px"
+                android:layout_alignRight="@+id/lblRegister_RePassword" android:gravity="center_vertical|left"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtRegister_Ill" android:layout_alignTop="@+id/lblRegister_Ill"
+                android:layout_alignLeft="@+id/imageView6" android:layout_alignRight="@+id/imageView6"
+                android:layout_alignBottom="@+id/lblRegister_Ill" android:background="@android:color/transparent"
+                android:textColor="@color/gray_dark" android:textSize="@dimen/EditTextFontSize"
+                android:hint="@string/bingshihint"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="3px"
+                android:id="@+id/imageView7"
+                android:layout_alignLeft="@+id/txtRegister_Ill" android:layout_below="@+id/txtRegister_Ill"
+                android:layout_alignRight="@+id/txtRegister_Ill"
+                android:background="@drawable/blackline"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45px"
+                android:text="@string/bingshiexam"
+                android:id="@+id/lblRegister_IllExam" android:layout_below="@+id/imageView7"
+                android:layout_alignLeft="@+id/imageView7" android:layout_alignRight="@+id/imageView7"
+                android:layout_marginTop="15px" android:gravity="center_vertical|left" android:textColor="@color/gray"
+                android:textSize="@dimen/EditTextLeftPadding"/>
+        <Button
+                android:layout_width="523px"
+                android:layout_height="90px"
+                android:text="@string/shenqing"
+                android:id="@+id/btnRegister_OK"
+                android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50px" android:textColor="@color/white"
+                android:textSize="@dimen/ButtonFontSize" android:background="@drawable/greenrect"/>
+    </RelativeLayout>
+</RelativeLayout>
+
